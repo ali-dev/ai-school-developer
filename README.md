@@ -5,6 +5,9 @@ I intend to add some fine-tuning docs with example questions and Query responses
 
 ### Notes:
 - you can see a couple of the generated reports in the Reports directory
+- ** Reports/fulfillment_summary.ipynb
+- ** Reports/subscription_summary.ipynb
+
 - I did not include the schema files for security reasons. In order to run the agent, you would need to create a `fulfillment.sql` and `subscription.sql` files in the root directory.
 
 ### Prompts:
