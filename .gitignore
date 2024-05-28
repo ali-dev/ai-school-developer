@@ -1,4 +1,4 @@
 .env
-.venv
+venv
 fulfillment.sql
 subscription.sql
