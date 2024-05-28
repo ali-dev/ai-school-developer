@@ -1,3 +1,19 @@
+# Tool Modifications
+I updated the code generator agent to be specifialized in building data analysis Jupyter notebooks. 
+I added a couple of tools that ingest SQL files that descipbe the database schema in order to make the Agent generate more accurate reports that actually takes how data is stored into account. I also updated the system prompt to be more specific to this usecase. it seems to work!!
+I intend to add some fine-tuning docs with example questions and Query responses in order to train the model on even more specific use cases. 
+
+### Notes:
+- you can see a couple of the generated reports in the Reports directory
+- I did not include the schema files for security reasons. In order to run the agent, you would need to create a `fulfillment.sql` and `subscription.sql` files in the root directory.
+
+### Prompts:
+Here are some prompts that I used:
+- Generate a Jupiter report that summarizes meal_packaging statuses across all markets. If there is virtual environment set up in Reports directory, please create one, and add the necessary packages to do this type of data analysis
+- Generate a report that displays number of new User subscriptions across different markets in the last 1 week
+-  can you please generate a readme file in Reports. the file should include instructions on how to set up and run the virtual environment, how to run jupyter notebooks, and a Reports section that describes the reports that were generated with links to the code  
+
+
 # AI For Developer Productivity: Coder Agent
 
 ## Overview
