@@ -43,13 +43,6 @@ def get_logistics_db_schema() -> str:
     return "logistics.sql"
 
 @tool
-def document_the_report(report_name) -> str:
-    """this tool shall get called every time a to update the README file in the Reports directory. """
-     
-    file1 = open("./fulfillment.sql", "r") 
-    return file1.read()
-
-@tool
 def create_directory(directory: str) -> str:
     """
     Create a new writable directory with the given directory name if it does not exist.
