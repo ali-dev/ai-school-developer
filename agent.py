@@ -38,12 +38,9 @@ def get_subscription_db_schema() -> str:
     file1 = open("./subscription.sql", "r") 
     return file1.read()
 
+# TODO: make this a tool in the future
 def get_logistics_db_schema() -> str:
-    """Use this function in order to write better fulfillment SQL in the reports. The fullfilment database
-    is used to get data about the status of orders that are picked and packed for all customers and acrross all stores"""
-     
-    file1 = open("./fulfillment.sql", "r") 
-    return file1.read()
+    return "logistics.sql"
 
 @tool
 def document_the_report(report_name) -> str:
